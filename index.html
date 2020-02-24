@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
+ <head>
       
         <title>C19 WebPage</title>
-   
+   <style>
+       body { background-color: beige;}
+       h1 {color: azure; margin-left: auto;}
+     </style>
     </head>
     <body>
-        <p><nav>
-        <ul>Menu</ul>
-        <li>Home</li><a href="index.html">Home</a>
-        <li>About Us</li><a href="AboutUs.html">About Us</a>
-        <li>Contact Us</li><a href="ContactUs.html">Contact Us</a>
-        <li>FAQ</li><a href="faq.html">FAQ</a>
-        <li>Logo</li><a href="images/uzoma.JPG">Logo</a>
-        </nav>
+        <div id="container"></div>
+        <header>
         
-        </p>
-    <h1>Uzoma's Blog:</h1><audio scr="audio"controls></audio>
-    <h3>My She Hacks Experience</h3>
+        </header>
+        <nav>
+        <ul>Menu</ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="images/uzoma.JPG">Logo</a></li>
+        </nav>
+        <center><h1 style="color: aqua"; "margin-left:30px;">Uzoma's Blog</h1></center>
+    <audio scr="audio"controls></audio>
+    <!--<h3>My She Hacks Experience</h3>-->
     <h2>It was a splendid experience</h2>
     <h4>I learned the HTML element using the bracket app</h4>
     <p>The first class which was handled by Mrs. Funke was fun because role play was infused into the lecture</p>
@@ -67,7 +72,7 @@
         <li> Milk</li>
         </ol>
         <p></p>
-        <table border="1" width=50% style=border-collapse:collapse; border-radius:20px; bgcolor= "#dd3f3f" text colour=rgba(41, 132, 136, 0.06)>
+        <table border="5" width=50% style=border-collapse:collapse; border-radius:20px; bgcolor="sky blue" text colour=rgba(41, 132, 136, 0.06);>
         <tr>
         <th>Name</th>
         <th>Cohort</th>
@@ -86,6 +91,34 @@
             <td>90</td></tr></table>
         <p> For more information about the subject matter, please follow the link <a href="moregist.html">Here</a></p>
         
-        
+    <form>
+    First name:<br>
+    <input type="text" name="firstname" placeholder="eg:Uzoma"><br>
+    Last name:<br>
+    <input type="text" name="lastname" placeholder="eg:Uzoegwu"><br>
+    Email:<br>
+    <input type="email" name="email" placeholder="eg:amos@gmail.com"><br>
+    User name:<br>
+    <input type="text" name="username"><br>
+    Password:<br>
+    <input type="password" name="psw"><br>
+    Gender:<br>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female
+    <input type="radio" name="gender" value="others">Others<br>
+    <p> Please tick the programming languages you would like to learn</p>
+    <input type="checkbox" name="language" value="css">CSS
+     <input type="checkbox" name="language" value="HTML">HTML
+    <input type="checkbox" name="language" value="JAVASCRIPT">JAVASCRIPT
+     <p>Please select your state of <em>Origin</em></p>
+    <select>
+    <option value="select">select</option>
+    <option value="Osun">Osun</option>
+    <option value="Anambra">Anambra</option>
+    <option value="Edo">Edo</option>
+    <option value="Akwa Ibom">Akwa Ibom</option>
+    </select><br>
+    <p><input type="submit" placeholder="SUBMIT"></p>
+    </form>
     </body>
 </html>
